@@ -1,5 +1,5 @@
 #!/bin/sh      
-ssh ubuntu@52.66.117.121 <<EOF        
+ssh ubuntu@35.154.243.106 <<EOF        
  cd app  
  git pull origin master       
  docker-compose up -d
