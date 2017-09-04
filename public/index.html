@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Online Insurance</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+
+    <!-- CUSTOM JS-->
+    <script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Add the Bootstrap nav bar as the header -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand " href="#">MyInsuranceQuote <span class="label label-success text-capitalize"></span></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Call us: 8050215421</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>		
+	
+    <div id="insuranceContainer">		
+			<div class="leftPart col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<br/>
+				<br/>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<center>
+					<p class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="radio" name="insuranceGroup"/><strong>Get New Insurance</strong></p>
+					<p class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><input type="radio" name="insuranceGroup"/><strong>Renew Insurance</strong></p>
+					</center>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<select class="col-xs-12 col-sm-12">
+						<option>Select a car type</option>
+						<option>Hyundai</option>
+						<option>Honda</option>
+						<option>Maruti</option>
+						<option>Tata</option>
+						<option>Renault</option>
+					</select>
+				</div>
+				<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<select class="col-xs-12 col-sm-12">
+						<option>Select a fuel type</option>
+						<option>Pl</option>
+						<option>Dl</option>					
+					</select>
+				</div>
+				<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<select class="col-xs-12 col-sm-12">
+						<option>Select a state</option>
+						<option>Tamil Nadu</option>
+						<option>Andhra</option>
+						<option>Karnataka</option>
+						<option>Kerala</option>					
+					</select>
+				</div>				
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<input class="col-xs-12 col-sm-12" type="text" placeholder="Enter your name"/>
+					</div>
+					<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<input  class="col-xs-12 col-sm-12" type="text" placeholder="Enter your mobile number"/>
+					</div>
+					<div style="text-align: center;" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<button class="btn btn-primary col-xs-12 col-sm-12">Get Quotes</button>
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<div class="spacePart col-xs-12 col-sm-12 col-md-1 col-lg-1"></div>
+			<div class="rightPart col-xs-12 col-sm-12 col-md-3 col-lg-3" style="text-align: center;">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><strong>Benefits</strong></div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Easy</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Efficient</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Quick</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>					
+			</div>
+	</div>
+
+    <!-- The Modal -->
+    <div id="modalPopup" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <p id="modelContent"></p>
+      </div>
+    </div>
+
+
+<!-- ADDING THE BOOTSTRAP FOOTER(STICKY) -->
+	<div class="navbar navbar-default navbar-fixed-bottom" Style="height:15px;" >
+		<div class="container">		  
+		  <p class="navbar-text pull-right">Copyright © Cognizant. 2016. All Rights Reserved.</p>
+		</div> 
+	</div>
+</div>
+</body>
+</html>
