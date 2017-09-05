@@ -26,6 +26,9 @@ RUN CMD:
 
 docker-compose up
 
+if you want run Docker compose in Background follow this step:
+
+docker-compose up -d
 
 Open your browser and hit- http://server_ip:3000
 
