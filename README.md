@@ -25,3 +25,8 @@ Then Go to your project dir where you pulled your code.
 RUN CMD:
 
 docker-compose up
+
+
+Open your browser and hit- http://server_ip:3000
+
+Have a good day!!!
