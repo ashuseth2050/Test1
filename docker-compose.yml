@@ -1,7 +1,8 @@
 db:
   image: mongo
+  command: mongod --port 27018
   ports:
-    - "27017:27017"
+    - "27018:27018"
   restart: always
 web:
   build: .
